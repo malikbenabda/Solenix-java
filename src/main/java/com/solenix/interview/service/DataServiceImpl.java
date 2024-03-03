@@ -18,9 +18,9 @@ public class DataServiceImpl implements DataService {
 
     public DataServiceImpl() {
         // Load data from JSON files
-        this.events = FileUtility.loadData("./static/events.json", new TypeReference<List<SpacecraftEvent>>() {});
-        this.latitudes = FileUtility.loadData("./static/latitudes.json", new TypeReference<List<Position>>() {});
-        this.longitudes = FileUtility.loadData("./static/longitudes.json", new TypeReference<List<Position>>() {});
+        this.events = FileUtility.loadData("./static/events.json", new TypeReference<>() {});
+        this.latitudes = FileUtility.loadData("./static/latitudes.json", new TypeReference<>() {});
+        this.longitudes = FileUtility.loadData("./static/longitudes.json", new TypeReference<>() {});
     }
 
     @Override
